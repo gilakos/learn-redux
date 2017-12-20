@@ -1,3 +1,5 @@
+// action = what happened (name), what needs to change (payload)
+
 // increment likes
 export function increment(index){
   return {
