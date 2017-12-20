@@ -15,6 +15,7 @@ const defaultState = {
   comments: comments,
 }
 
+//create the store
 const store = createStore(rootReducer, defaultState)
 
 export const history = syncHistoryWithStore(broswerHistory, store)
