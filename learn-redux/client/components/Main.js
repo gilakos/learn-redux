@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router'
 
 class Main extends Component {
-  render(){
+  render() {
     return(
       <div>
         <h1>
@@ -11,7 +11,6 @@ class Main extends Component {
           </Link>
         </h1>
         {React.cloneElement(this.props.children, this.props)}
-        some text
       </div>
     )
   }
