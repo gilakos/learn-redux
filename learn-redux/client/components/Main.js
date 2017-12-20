@@ -10,8 +10,8 @@ class Main extends Component {
           Reduxstagram
           </Link>
         </h1>
-        { React.cloneElement(this.props.children, this.props) }
-
+        {React.cloneElement(this.props.children, this.props)}
+        some text
       </div>
     )
   }
