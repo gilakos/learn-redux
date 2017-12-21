@@ -1,4 +1,4 @@
-function postCommetns(state = [], action){
+function postComments(state = [], action){
   switch(action.type){
     case 'ADD_COMMENT':
       return [...state,{
@@ -16,7 +16,6 @@ function postCommetns(state = [], action){
     default:
       return state
   }
-
   return state
 }
 
@@ -27,7 +26,6 @@ function comments( state = [], action ){
       [action.postId]: postComments(state[action.postId], action)
     }
   }
-
   return state
 }
 
