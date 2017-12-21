@@ -19,8 +19,6 @@ class Comments extends Component {
     //prevent default action of refreshing page
     event.preventDefault()
     //get data from form (why we specified ref on input below)
-    //console.log('clicked')
-    //console.log(this.props.params.postId)
     const { postId } = this.props.params
     const author = this.refs.author.value
     const comment = this.refs.comment.value
@@ -28,7 +26,6 @@ class Comments extends Component {
     this.refs.commentForm.reset()
   }
   render() {
-    const postId = this.props.params.postId
     return (
       <div className='comments'>
         {this.props.postComments.map((comment, i) => this.renderComment(comment, i))}
